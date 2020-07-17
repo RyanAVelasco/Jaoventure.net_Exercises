@@ -34,7 +34,7 @@ print("""\n\n4.2: Exercises with functions
 Then implement the "add3" function that receives and sums 3 parameters.
 2. Implement a function that returns the greatest of two numbers given as parameters.
 Use the "if" statement to compare both numbers: https://docs.python.org/3/tutorial/controlflow.html#if-statements.
-3. Implement a function named "is_divisable" that receives two parameters (named"a" and "b") 
+3. Implement a function named "is_divisable" that receives two parameters (named "a" and "b") 
 and returns true if "a" can be divided by "b" or false otherwise. 
 A number is divisable by another when the remainder of the division is zero. 
 Use the modulo operator ("%").
@@ -77,6 +77,32 @@ n2 = random.randint(0, 10)
 print(great(n1, n2))
 
 print("""\n=== Answer 3 ===""")
+
+
+def is_divisible(a, b):
+    if a%b == 0:
+        return True
+    else:
+        return False
+
+
+n1 = random.randint(0, 10)
+n2 = random.randint(0, 10)
+
+print("Can " + str(n1) + " / " + str(n2) + " equally?", is_divisible(n1, n2))
+
+
+def get_average(val):
+    return sum(val)/len(val)
+
+count = 0
+l = []
+while count < 10:
+    l.append(random.randint(0, 1000))
+    count += 1
+print("List:", l)
+
+print("Average:", get_average(l))
 
 print("""\n=== Answer 4 ===""")
 
