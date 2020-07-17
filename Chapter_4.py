@@ -91,6 +91,8 @@ n2 = random.randint(0, 10)
 
 print("Can " + str(n1) + " / " + str(n2) + " equally?", is_divisible(n1, n2))
 
+print("""\n=== Answer 4 ===""")
+
 
 def get_average(val):
     return sum(val)/len(val)
@@ -103,8 +105,7 @@ while count < 10:
 print("List:", l)
 
 print("Average:", get_average(l))
-
-print("""\n=== Answer 4 ===""")
+1234567890
 
 print("""\n\n4.4: Exercises with recursive functions
 1. Implement the factorial function and test it with several different values. 
@@ -114,10 +115,16 @@ Start by thinking about the base case (the sum of the first 0 integers is?) and 
 3. The Fibonnaci sequence is a sequence of numbers in which each number of the sequence matches 
 the sum of the previous two terms. 
 Given the following recursive definition implement fib(n).
-#  See PDF for fib(n) image
+*See PDF for fib(n) image
 Check your results for the first numbers of the sequence: 0, 1, 1, 2, 3, 5, 8, 13, 21,34, 55, 89, ...""")
 
+
 print("""\n=== Answer 1 ===""")
+count = 1
+while count != 11:
+    x = random.randint(0, 15)
+    print("Test " + str(count) + " for number " + str(x) + ":", math.factorial(x))
+    count += 1
 
 print("""\n=== Answer 2 ===""")
 
