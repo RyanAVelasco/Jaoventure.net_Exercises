@@ -11,10 +11,21 @@ Make sure that you convert the user input
 from string to a number (use the int() or the float() function).""")
 
 print("""\n=== Answer 1 ===""")
+print("GCD of 15, 21 is", math.gcd(15, 21))
+print("GCD of 152, 200 is", math.gcd(152, 200))
+print("GCD of 1988, 9765 is", math.gcd(1988, 9765))
 
 print("""\n=== Answer 2 ===""")
+num = [1, 2, 6, 9, 15]  # I removed 0 because it causes a math domain error
+
+for n in num:
+    print(math.log2(n))
 
 print("""\n=== Answer 3 ===""")
+num = float(input("Please enter a number to convert to sine, cosine and tangent: "))
+print("Sine of", num, "- is", math.sin(num))
+print("Coine of", num, "- is", math.cos(num))
+print("Tangent of", num, "- is", math.tan(num))
 
 print("""\n\n4.2: Exercises with functions
 1. Implement the "add2" function that receives two numbers as arguments and returns the sum of the numbers. 
