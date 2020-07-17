@@ -81,17 +81,31 @@ You can find the "replace" function.
 (a) "AAA BBB CCC"
 (b) "AAA bbb CCC\"""")
 
-print("\n=== Answer 1a ===")
+print("\n=== Answer 1 ===")
+s = "abc"
+print(len(s))
+s = s.replace("a", "aaa")
+s = s.replace("b", "bbb")
+s = s.replace("c", "ccc")
+print(s)
 
-print("\n=== Answer 1b ===")
+print("\n=== Answer 2 ===")
+s = "aaabbbccc"
+f = s.find("b")
+g = s.find("c")
+print("b first appears at index:", f, "| c first appears at index:", g)
+# s = s.replace("a", "X")  # changes all a's to X
+# print(s)
+s = s.replace("a", "X", 1)  # changes all a's to X
+print(s)
 
-print("\n=== Answer 2a ===")
-
-print("\n=== Answer 2b ===")
-
-print("\n=== Answer 3a ===")
-
-print("\n=== Answer 3b ===")
+print("\n=== Answer 3 ===")
+s = "aaa bbb ccc"
+# s = s.upper()  # changes all lowercase to uppercase
+# print(s)
+s = s.replace("a", "A")
+s = s.replace("c", "C")
+print(s)
 
 
 
