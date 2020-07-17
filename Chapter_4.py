@@ -1,3 +1,4 @@
+import random
 import math
 
 print("""\n\n4.1: Exercises with the math module
@@ -22,10 +23,11 @@ for n in num:
     print(math.log2(n))
 
 print("""\n=== Answer 3 ===""")
-num = float(input("Please enter a number to convert to sine, cosine and tangent: "))
-print("Sine of", num, "- is", math.sin(num))
-print("Coine of", num, "- is", math.cos(num))
-print("Tangent of", num, "- is", math.tan(num))
+# num = float(input("Please enter a number to convert to sine, cosine and tangent: "))
+num = random.randint(-360, 360)
+print("Sine of", num, "is", math.sin(num))
+print("Coine of", num, "is", math.cos(num))
+print("Tangent of", num, "is", math.tan(num))
 
 print("""\n\n4.2: Exercises with functions
 1. Implement the "add2" function that receives two numbers as arguments and returns the sum of the numbers. 
@@ -41,7 +43,38 @@ Use the "sum" and "len" functions.""")
 
 print("""\n=== Answer 1 ===""")
 
+
+def add_2(val1, val2):
+    print("Function got value", val1, "and", val2)
+    return val1 + val2
+
+
+def add_3(val1, val2, val3):
+    print("Function got value", str(val1) + ",", val2, "and", val3)
+    return val1 + val2 + val3
+
+
+n1 = random.randint(0, 10)
+n2 = random.randint(0, 10)
+n3 = random.randint(0, 10)
+
+print(add_2(n1, n2))
+print(add_3(n1, n2, n3))
+
 print("""\n=== Answer 2 ===""")
+
+
+def great(val1, val2):
+    print("Received", val1, "and", val2)
+    if val1 > val2:
+        return val1
+    else:
+        return val2
+
+n1 = random.randint(0, 10)
+n2 = random.randint(0, 10)
+
+print(great(n1, n2))
 
 print("""\n=== Answer 3 ===""")
 
