@@ -105,7 +105,6 @@ while count < 10:
 print("List:", l)
 
 print("Average:", get_average(l))
-1234567890
 
 print("""\n\n4.4: Exercises with recursive functions
 1. Implement the factorial function and test it with several different values. 
