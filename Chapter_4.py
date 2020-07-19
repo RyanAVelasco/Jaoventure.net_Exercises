@@ -126,5 +126,37 @@ while count != 11:
     count += 1
 
 print("""\n=== Answer 2 ===""")
+t = [1,1,2,3,5,8,13,21,34,55,89]
 
-print("""\n=== Answer 3 ===""")
+while True:
+    try:
+        print(t)
+        print('took', t[0], 'and added', t[1])
+        tval = t.pop(0) + t.pop(0)
+        t.insert(0, tval)
+        print (tval)
+    except:
+        print("No more values")
+        break
+
+print("""\n=== Answer 3 === I'm not sure if the question is asking me to create a fibonacci sequence function but I'll do it anyways""")
+#  Couldn't figure out how to solve this one (20200718, 00:18:01)'
+fibonacci = [0, 1]
+
+
+def fib(n): 
+    global fibonacci
+    val = fibonacci.pop(0) + fibonacci[1] + n
+    fibonacci.append(val)
+    return val
+    
+
+x = 0
+n1 = 0
+
+while x < 1000000:
+    fib(x)
+    print(fibonacci)
+    
+    
+    
