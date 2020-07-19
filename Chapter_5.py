@@ -173,8 +173,10 @@ insertNumbers = 0
 loops = 0
 
 while insertNumbers < 100:  # input any here
-    numbers.append(random.randint(0, 50))  # input any range
+    numbers.append(random.randint(0, 10))  # input any range
     insertNumbers += 1
+
+print("Original List:", numbers)
 
 while loops < 100:  # match number in while insertNumbers
     for n in numbers:
@@ -184,7 +186,7 @@ while loops < 100:  # match number in while insertNumbers
             del numbers[index]
     loops += 1
 numbers.sort()
-print(numbers)
+print("No duplicate list:", numbers)
 
 
 
