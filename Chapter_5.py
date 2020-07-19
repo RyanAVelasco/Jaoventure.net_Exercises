@@ -1,3 +1,6 @@
+import random
+
+
 print("""
 === 5.1: Exercises with the for loop ===
 1. Create a function "add" that receives a list as parameter and returns the sum of all elements in the list. 
@@ -21,7 +24,8 @@ by decreasing order.
 7. Implement the "has_duplicates" function which verifies if a list has duplicate values.
 You may have to use two "for" loops, where for each value you have to check for duplicates on the rest of the list.""")
 
-print("\n=== Answer 1 ===")
+print("""
+=== Answer 1 ===""")
 list =[127,239,203,874,115,706,477,108,109,160]
 sum = 0
 
@@ -36,6 +40,9 @@ def add(x):
     
 print(add(sum))
 
+
+print("""
+=== Answer 2 ===""")
 
 def findMax(L):
     global maxValue
@@ -60,7 +67,8 @@ print("Number List:", numberList)
 findMax(numberList)
 
 
-
+print("""
+=== Answer 3 ===""")
 
 
 def findMax(L):
@@ -84,3 +92,69 @@ print("Number List:", numberList)
 
 
 findMax(numberList)
+
+
+print("""
+=== Answer 4 ===""")
+def reverse(list):
+    list.reverse()
+    return "Sorted List:", list
+
+
+count = 0
+numbers = []
+
+while count < 10:
+    numbers.append(random.randint(0, 50))
+    count += 1
+
+print("Original List:", numbers)
+print(reverse(numbers))
+
+
+print("""
+=== Answer 5 ===""")
+
+
+def is_sorted(list):
+    list.sort()
+    prev_number = list[0]
+    for n in list:
+        if prev_number > n:
+            return "failed"
+        else:
+            return True
+    print(list)
+
+count = 0
+numbers = []
+
+while count < 10:
+    numbers.append(random.randint(0, 50))
+    count += 1
+print("Unsorted list:", numbers)
+
+print(is_sorted(numbers))
+
+print("Sorted List:", numbers)
+
+
+print("""
+=== Answer 6 ===""")
+
+
+def is_sorted_dec(list):
+    list.sort()
+    list.reverse()
+    return list
+
+
+count = 0
+numbers = []
+
+while count < 10:
+    numbers.append(random.randint(0, 50))
+    count += 1
+
+print("Original List:", numbers)
+print(is_sorted_dec(numbers))
