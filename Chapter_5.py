@@ -157,4 +157,36 @@ while count < 10:
     count += 1
 
 print("Original List:", numbers)
-print(is_sorted_dec(numbers))
+print("Sorted list:", is_sorted_dec(numbers))
+
+
+print("""
+=== Answer 7 ===""")
+
+
+def has_duplicates(list):
+    pass
+
+
+numbers = []
+insertNumbers = 0
+loops = 0
+
+while insertNumbers < 100:  # input any here
+    numbers.append(random.randint(0, 50))  # input any range
+    insertNumbers += 1
+
+while loops < 100:  # match number in while insertNumbers
+    for n in numbers:
+        count = numbers.count(n)
+        if numbers.count(n) > 1:
+            index = numbers.index(n)
+            del numbers[index]
+    loops += 1
+numbers.sort()
+print(numbers)
+
+
+
+
+
