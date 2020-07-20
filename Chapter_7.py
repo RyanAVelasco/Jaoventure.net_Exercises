@@ -31,24 +31,29 @@ class Rectangle:
         self.y2 = y2
 
     def width(self):
+        print(find.__str__())
         return self.x1 + self.x2
 
+
     def height(self):
+        print(find.__str__())
         return self.y1 + self.y2
 
     def area(self):
+        print(find.__str__())
         return (self.x1 + self.x2) * (self.y1 + self.y2)
 
     def circumference(self):
-        return self.x1 + self.x2 + self.y1 + self.y2
+        print(find.__str__())
+        return 2 * (self.x1 + self.x2) + 2 * (self.y1 + self.y2)
 
+    def __str__(self):
+        return (self.x1, self.y1), (self.x2, self.y2)
 
 find = Rectangle(0, 10, 30, 30)
 
-print("""
-Area:""", find.area(),
-"""
-Circumference:""", find.circumference())
+print("Area:", find.area())
+print("Circumference:", find.circumference())
 
 
 
@@ -58,10 +63,10 @@ Use the "Rectangle" class as implemented above for the following exercises:
 1. Create a "Square" class as subclass of "Rectangle".
 2. Implement the "Square" constructor. The constructor should have only the x1, y1
 coordinates and the size of the square. Notice which arguments you’ll have to use
-when you invoce the "Rectangle" constructor when you use "super".
+when you invoke the "Rectangle" constructor when you use "super".
 3. Instantiate two objects of "Square", invoke the area method and print the objects.
 Make sure that all calculations are returning correct numbers and that the coordinates of
-the squares are consistent with the size of the square used as argument.""")
+the squares are consistent with the size of the square used as an argument.""")
 
 
 print("""
