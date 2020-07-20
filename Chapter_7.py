@@ -1,6 +1,7 @@
 import random
 
 print("""
+
 === 7.1: Exercises with classes ===
 Use the python documentation on classes at https://docs.python.org/3/tutorial/classes.html 
 to solve the following exercises.
@@ -19,8 +20,9 @@ method such that when you print one of the objects it print the coordinates as (
 y1)(x2, y2).""")
 
 print("""
-=== Answer 1 to 6 ===
-Each question seems to build upon one another so I'll do it all at the same time""")
+=== Answer ===
+'Each question seems to build upon one another so I'll do it all at the same time.'
+""")
 
 class Rectangle:
 
@@ -58,6 +60,7 @@ print("Circumference:", find.circumference())
 
 
 print("""
+
 === 7.3: Exercises with inheritance ===
 Use the "Rectangle" class as implemented above for the following exercises:
 1. Create a "Square" class as subclass of "Rectangle".
@@ -70,15 +73,6 @@ the squares are consistent with the size of the square used as an argument.""")
 
 
 print("""
-=== Answer 1 ===""")
-
-
-print("""
-=== Answer 2 ===""")
-
-
-print("""
-=== Answer 3 ===""")
-
-
-
+=== Answer ===
+'I'm truly boggled right now.. No clue how to do this so I'll come back to it after learning more
+about Classes and sub-classes.'""")
