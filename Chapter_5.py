@@ -161,7 +161,7 @@ print("Sorted list:", is_sorted_dec(numbers))
 
 
 print("""
-=== Answer 7 ===""")
+=== Answer 7 ===""")\
 
 
 def has_duplicates(list):
@@ -173,7 +173,7 @@ insertNumbers = 0
 loops = 0
 
 while insertNumbers < 100:  # input any here
-    numbers.append(random.randint(0, 10))  # input any range
+    numbers.append(random.randint(0, 100))  # input any range
     insertNumbers += 1
 
 print("Original List:", numbers)
@@ -190,5 +190,37 @@ print("No duplicate list:", numbers)
 
 
 
+print("""
+=== 5.2: Exercises with the while statement ==
+Implement a function that receives a number as parameter and prints, in decreasing
+order, which numbers are even and which are odd, until it reaches 0.
 
+>>> even_odd ( 10)
+Even number : 10
+Odd number : 9
+Even number : 8
+Odd number : 7
+Even number : 6
+Odd number : 5
+Even number : 4
+Odd number : 3
+Even number : 2
+Odd number : 1
+""")
 
+print(""" 
+=== Answer 1 ===
+Super easy problem
+""")
+
+def even_odd(x):
+    while x != 0:
+        if x % 2 == 0:
+            print("Even number:", x)
+            x -= 1
+        else:
+            print("Odd number:", x)
+            x -= 1
+ 
+num = input("Please enter a number: ")
+even_odd(int(num))
